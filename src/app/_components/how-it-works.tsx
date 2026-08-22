@@ -11,7 +11,7 @@ export function HowItWorks() {
         positions — like pins on a map.
       </li>
       <li>
-        A pixel is not a millimeter. So you hold a real object we we already know
+        A pixel is not a millimeter. So you hold a real object we already know
         the size of, usually a credit card (85.6 mm long). You tap one end,
         then the other. The site divides that known length by the distance
         between those two taps. That number is the ruler for every face
