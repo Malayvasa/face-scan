@@ -1,6 +1,7 @@
 "use client";
 
-import { Camera, Shield } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Camera, Shield } from "lucide-react";
 import { Button } from "@/components/button";
 import { HowItWorks } from "./how-it-works";
 
@@ -30,6 +31,13 @@ export function ScanIntro({ onStartCamera }: ScanIntroProps) {
           How this works, if you have never built a website
         </h2>
         <HowItWorks />
+        <Link
+          href="/how-it-works"
+          className="text-foreground inline-flex items-center gap-1.5 border-b border-current pb-0.5 text-sm font-medium transition-opacity hover:opacity-70 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4"
+        >
+          Explore the visual system guide
+          <ArrowRight className="size-3.5" aria-hidden="true" />
+        </Link>
       </div>
 
       <Button type="button" onClick={onStartCamera}>
